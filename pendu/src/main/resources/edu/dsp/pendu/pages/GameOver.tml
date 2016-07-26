@@ -1,0 +1,7 @@
+<html t:type="layout" title="pendu Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+        >
+
+   <p>vous avez trouve le nombre magique ${nbfind} en ${nbtentatives} </p>
+
+</html>

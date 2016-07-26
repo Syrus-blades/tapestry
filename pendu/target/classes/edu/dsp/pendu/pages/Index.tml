@@ -1,0 +1,10 @@
+<html t:type="layout" title="pendu Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+        >
+
+
+
+     <h3>${message:Mess1}</h3>
+    
+ <p><t:actionlink t:id="LetItGo" class="btn btn-primary btn-large">Let It Go </t:actionlink></p>
+</html>

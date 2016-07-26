@@ -1,0 +1,207 @@
+EXCEPTION STACK:
+
+
+        Exception: org.apache.tapestry5.runtime.ComponentEventException
+          Message: Exception assembling root component of page GameOver: Could not convert 'nombre' into a component parameter binding: Exception generating conduit for expression 'nombre': Class edu.dsp.pendu.pages.GameOver does not contain a property (or public field) named 'nombre'.
+          context: <EventContext: 9>
+        eventType: action
+         location: classpath:edu/dsp/pendu/pages/Guess.tml, line 8
+
+        Exception: org.apache.tapestry5.ioc.internal.OperationException
+          Message: Exception assembling root component of page GameOver: Could not convert 'nombre' into a component parameter binding: Exception generating conduit for expression 'nombre': Class edu.dsp.pendu.pages.GameOver does not contain a property (or public field) named 'nombre'.
+            trace: Handling traditional 'action' component event request for Guess:deviner.
+                   Triggering event 'action' on Guess:deviner
+                   Constructing instance of page class edu.dsp.pendu.pages.GameOver
+                   Assembling root component for page GameOver
+
+        Exception: java.lang.RuntimeException
+          Message: Exception assembling root component of page GameOver: Could not convert 'nombre' into a component parameter binding: Exception generating conduit for expression 'nombre': Class edu.dsp.pendu.pages.GameOver does not contain a property (or public field) named 'nombre'.
+
+        Exception: org.apache.tapestry5.ioc.internal.util.TapestryException
+          Message: Could not convert 'nombre' into a component parameter binding: Exception generating conduit for expression 'nombre': Class edu.dsp.pendu.pages.GameOver does not contain a property (or public field) named 'nombre'.
+         location: classpath:edu/dsp/pendu/pages/GameOver.tml, line 5
+
+        Exception: org.apache.tapestry5.internal.services.PropertyExpressionException
+          Message: Exception generating conduit for expression 'nombre': Class edu.dsp.pendu.pages.GameOver does not contain a property (or public field) named 'nombre'.
+       expression: nombre
+
+        Exception: org.apache.tapestry5.ioc.util.UnknownValueException
+          Message: Class edu.dsp.pendu.pages.GameOver does not contain a property (or public field) named 'nombre'.
+  availableValues: AvailableValues[Properties (and public fields): class, componentResources, current, dernieressai, indice, nbfind, nbtentatives]
+
+  Stack trace:
+
+  - org.apache.tapestry5.internal.services.PropertyConduitSourceImpl$PropertyConduitBuilder.findPropertyAdapter(PropertyConduitSourceImpl.java:1168)
+  - org.apache.tapestry5.internal.services.PropertyConduitSourceImpl$PropertyConduitBuilder.implementPropertyAccessors(PropertyConduitSourceImpl.java:514)
+  - org.apache.tapestry5.internal.services.PropertyConduitSourceImpl$PropertyConduitBuilder.implementAccessors(PropertyConduitSourceImpl.java:418)
+  - org.apache.tapestry5.internal.services.PropertyConduitSourceImpl$PropertyConduitBuilder.implementNavMethodAndAccessors(PropertyConduitSourceImpl.java:409)
+  - org.apache.tapestry5.internal.services.PropertyConduitSourceImpl$PropertyConduitBuilder.transform(PropertyConduitSourceImpl.java:279)
+  - org.apache.tapestry5.plastic.PlasticManager.createProxy(PlasticManager.java:251)
+  - org.apache.tapestry5.plastic.PlasticManager.createProxy(PlasticManager.java:229)
+  - org.apache.tapestry5.ioc.internal.services.PlasticProxyFactoryImpl.createProxy(PlasticProxyFactoryImpl.java:74)
+  - $PlasticProxyFactory_5d66dfff5dc8d.createProxy(Unknown Source)
+  - $PlasticProxyFactory_5d66dfff5dc8c.createProxy(Unknown Source)
+  - org.apache.tapestry5.internal.services.PropertyConduitSourceImpl.build(PropertyConduitSourceImpl.java:1461)
+  - org.apache.tapestry5.internal.services.PropertyConduitSourceImpl.create(PropertyConduitSourceImpl.java:1375)
+  - $PropertyConduitSource_5d66dfff5dc9e.create(Unknown Source)
+  - org.apache.tapestry5.internal.bindings.PropBindingFactory.newBinding(PropBindingFactory.java:47)
+  - $BindingFactory_5d66dfff5dc9f.newBinding(Unknown Source)
+  - $BindingFactory_5d66dfff5dc96.newBinding(Unknown Source)
+  - org.apache.tapestry5.internal.services.BindingSourceImpl.newBinding(BindingSourceImpl.java:81)
+  - $BindingSource_5d66dfff5dc55.newBinding(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageElementFactoryImpl.newExpansionElement(PageElementFactoryImpl.java:161)
+  - $PageElementFactory_5d66dfff5dc81.newExpansionElement(Unknown Source)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl$15.execute(PageLoaderImpl.java:1042)
+  - org.apache.tapestry5.internal.pageload.ComponentAssemblerImpl.runActions(ComponentAssemblerImpl.java:229)
+  - org.apache.tapestry5.internal.pageload.ComponentAssemblerImpl.performAssembleRootComponent(ComponentAssemblerImpl.java:105)
+  - org.apache.tapestry5.internal.pageload.ComponentAssemblerImpl.access$000(ComponentAssemblerImpl.java:37)
+  - org.apache.tapestry5.internal.pageload.ComponentAssemblerImpl$1.invoke(ComponentAssemblerImpl.java:81)
+  - org.apache.tapestry5.internal.pageload.ComponentAssemblerImpl$1.invoke(ComponentAssemblerImpl.java:78)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.pageload.ComponentAssemblerImpl.assembleRootComponent(ComponentAssemblerImpl.java:76)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl$3.invoke(PageLoaderImpl.java:197)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl$3.invoke(PageLoaderImpl.java:190)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.pageload.PageLoaderImpl.loadPage(PageLoaderImpl.java:189)
+  - $PageLoader_5d66dfff5dc6b.loadPage(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageSourceImpl.getPage(PageSourceImpl.java:104)
+  - $PageSource_5d66dfff5dc6a.getPage(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestPageCacheImpl.get(RequestPageCacheImpl.java:86)
+  - $RequestPageCache_5d66dfff5dc69.get(Unknown Source)
+  - $RequestPageCache_5d66dfff5dc64.get(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentSourceImpl.getPage(ComponentSourceImpl.java:83)
+  - $ComponentSource_5d66dfff5dc54.getPage(Unknown Source)
+  - org.apache.tapestry5.internal.transform.InjectPageWorker$InjectedPageConduit$1.createObject(InjectPageWorker.java:44)
+  - org.apache.tapestry5.ioc.internal.services.PerthreadManagerImpl$DefaultObjectCreator.createObject(PerthreadManagerImpl.java:275)
+  - org.apache.tapestry5.internal.transform.InjectPageWorker$InjectedPageConduit.get(InjectPageWorker.java:58)
+  - edu.dsp.pendu.pages.Guess.conduit_get_gameover(Guess.java)
+  - edu.dsp.pendu.pages.Guess.onActionFromDeviner(Guess.java:46)
+  - edu.dsp.pendu.pages.Guess.dispatchComponentEvent(Guess.java)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.dispatchEvent(ComponentPageElementImpl.java:917)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.processEventTriggering(ComponentPageElementImpl.java:1102)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.access$3100(ComponentPageElementImpl.java:57)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1047)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1044)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementResourcesImpl.invoke(ComponentPageElementResourcesImpl.java:154)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.triggerContextEvent(ComponentPageElementImpl.java:1043)
+  - org.apache.tapestry5.internal.services.ComponentEventRequestHandlerImpl.handle(ComponentEventRequestHandlerImpl.java:73)
+  - org.apache.tapestry5.internal.services.AjaxFilter.handle(AjaxFilter.java:42)
+  - $ComponentEventRequestHandler_5d66dfff5dcc3.handle(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$37.handle(TapestryModule.java:2216)
+  - $ComponentEventRequestHandler_5d66dfff5dcc3.handle(Unknown Source)
+  - $ComponentEventRequestHandler_5d66dfff5dc61.handle(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentRequestHandlerTerminator.handleComponentEvent(ComponentRequestHandlerTerminator.java:43)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.handleComponentEvent(DeferredResponseRenderer.java:45)
+  - $ComponentRequestHandler_5d66dfff5dc63.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.services.InitializeActivePageName.handleComponentEvent(InitializeActivePageName.java:39)
+  - $ComponentRequestHandler_5d66dfff5dc63.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$1.perform(RequestOperationTracker.java:55)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$1.perform(RequestOperationTracker.java:52)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.perform(OperationTrackerImpl.java:110)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.perform(PerThreadOperationTracker.java:84)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.perform(RegistryImpl.java:1266)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker.handleComponentEvent(RequestOperationTracker.java:47)
+  - $ComponentRequestHandler_5d66dfff5dc63.handleComponentEvent(Unknown Source)
+  - $ComponentRequestHandler_5d66dfff5dc36.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentEventDispatcher.dispatch(ComponentEventDispatcher.java:48)
+  - $Dispatcher_5d66dfff5dc38.dispatch(Unknown Source)
+  - $Dispatcher_5d66dfff5dc2d.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_5d66dfff5dc2e.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:846)
+  - $RequestHandler_5d66dfff5dc2e.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:836)
+  - $RequestHandler_5d66dfff5dc2e.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_5d66dfff5dc2e.service(Unknown Source)
+  - edu.dsp.pendu.services.AppModule$1.service(AppModule.java:113)
+  - $RequestFilter_5d66dfff5dc28.service(Unknown Source)
+  - $RequestHandler_5d66dfff5dc2e.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter$2.invoke(CheckForUpdatesFilter.java:105)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter$2.invoke(CheckForUpdatesFilter.java:95)
+  - org.apache.tapestry5.ioc.internal.util.ConcurrentBarrier.withRead(ConcurrentBarrier.java:83)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter.service(CheckForUpdatesFilter.java:119)
+  - $RequestHandler_5d66dfff5dc2e.service(Unknown Source)
+  - $RequestHandler_5d66dfff5dc22.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_5d66dfff5dc24.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:62)
+  - $HttpServletRequestFilter_5d66dfff5dc1f.service(Unknown Source)
+  - $HttpServletRequestHandler_5d66dfff5dc24.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:796)
+  - $HttpServletRequestHandler_5d66dfff5dc24.service(Unknown Source)
+  - $HttpServletRequestHandler_5d66dfff5dc1e.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1148)
+  - org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:387)
+  - org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+  - org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+  - org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+  - org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:417)
+  - org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+  - org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+  - org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+  - org.mortbay.jetty.Server.handle(Server.java:324)
+  - org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:535)
+  - org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:865)
+  - org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:539)
+  - org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+  - org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+  - org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)
+  - org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:520)
+
+REQUEST:
+
+Basic Information:
+
+                contextPath: /pendu
+                      flags: requestedSessionIdValid
+                     method: GET
+                       path: /guess.deviner/9
+                     locale: fr_FR
+                 serverName: localhost
+                 remoteHost: 0:0:0:0:0:0:0:1
+
+Headers:
+
+                     Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+            Accept-Encoding: gzip, deflate, sdch
+            Accept-Language: fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,de;q=0.2
+                 Connection: keep-alive
+                     Cookie: JSESSIONID=1dsjwwsdd4147
+                       Host: localhost:8080
+                    Referer: http://localhost:8080/pendu/guess
+  Upgrade-Insecure-Requests: 1
+                 User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+
+SESSION:
+
+  state:Guess::current: 10
+   state:Guess::indice: le nombre 10 est trop haut
+   state:Guess::nbfind: 9
+
+SYSTEM INFORMATION:
+
+Memory:
+      411 487 368 bytes free
+      747 634 688 bytes total
+    7 609 516 032 bytes max
+
+8 Threads:
+                                                            Reference Handler WAITING, daemon, priority 10
+                                                                    Finalizer WAITING, daemon, priority 8
+                                                            Signal Dispatcher RUNNABLE, daemon, priority 9
+                                                              Attach Listener RUNNABLE, daemon
+                                                                         main WAITING
+  1002911155@qtp-1857007886-1 - Acceptor0 SelectChannelConnector@0.0.0.0:8080 RUNNABLE
+                                                                      Timer-0 TIMED_WAITING, daemon
+*                                                1055943084@qtp-1857007886-53 RUNNABLE

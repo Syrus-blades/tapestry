@@ -1,0 +1,18 @@
+<html t:type="layout" title="pendu Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+        >
+        
+        <p>Tentative ${nbtentatives}</p>
+        
+<p>le chiffre a trouver est ${nbfind}</p>
+    <ul class="list-inline">
+        <t:loop source="1..10" value="current">
+            <li>
+            <t:actionlink t:id="Deviner" context="current">${current}
+            </t:actionlink>
+            </li>
+        </t:loop>
+    </ul>
+    <p>${indice}</p>
+
+</html>
